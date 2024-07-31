@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не удается получить доступ к сайту</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212121;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .error-icon {
+            font-size: 72px;
+        }
+        .reload-btn {
+            background-color: #3b8bd1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .reload-btn:hover {
+            background-color: #337ab7;
+        }
+        a {
+            color: #3b8bd1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-icon"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAA20lEQVRIie3VsQ3DIBAE0JWlBYFOIBcQD6CEW4BlEXMFVEFCHBC/UBIykU1yXxnscdX+bcv7NpjzzRfKje8pttRR+L1jiUAsvS7kF5Ip2KpAMxDjUAHApbs1kwQqAyrLoNUH1htgJSmRkMLwNtbKLDMBZ7fGPs1J0wWsmBuAlztimBl+flagischeburashka/BSPbklNU7B1SY5eqfgv3zX6M5O3RzHyia1JXrITjhu44doVQZl4xBMpAd+ZTgXQgYtjoT+0n11AnMkr+yZb/AUAd7VBYNnwsRQAAAAASUVORK5CYII="></div>
+        <h1>Не удается получить доступ к сайту</h1>
+        <p>Превышено время ожидания ответа от сайта <strong>10.0.2.15</strong>.</p>
+        <p>Попробуйте сделать следующее:</p>
+        <ul>
+            <li>Проверьте подключение к Интернету.</li>
+            <li><a href="#">Проверьте настройки прокси-сервера и брандмауэра.</a></li>
+            <li><a href="#">Выполните диагностику сети в Windows</a></li>
+        </ul>
+        <p>ERR_CONNECTION_TIMED_OUT</p>
+        <button class="reload-btn" onclick="location.reload()">Перезагрузить</button>
+    </div>
+</body>
+</html>
